@@ -1,0 +1,50 @@
+.main-container {
+  padding-right: 500px;
+}
+
+.content {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.gallery {
+  position: relative;
+  display: grid;
+  align-items: center;
+  grid-template-columns: repeat(50, 2%);
+  grid-template-rows: repeat(50, 2%);
+  background-color: #ebe4e3;
+  width: 250vw;
+  padding-left: 2rem;
+  height: 100%;
+}
+
+.gallery-helper {
+  // grid-area: 47/14 / span 2 / span 1;
+  position: absolute;
+  bottom: 2rem;
+  left: 85vw;
+  line-height: 0.5;
+  font-size: 2vw;
+  color: #cc704c;
+}
+
+.behind-text {
+  position: absolute;
+  bottom: 2rem;
+  left: 0;
+  font-size: 15vw;
+  font-weight: 300;
+  line-height: 1;
+  z-index: 2;
+  &.fill {
+    color: #cc704c;
+  }
+  &.outline {
+    z-index: 2;
+    mix-blend-mode: overlay;
+  }
+}

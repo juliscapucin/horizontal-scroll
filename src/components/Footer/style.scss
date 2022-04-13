@@ -1,0 +1,23 @@
+.footer {
+  height: 100%;
+  width: 100vw;
+  background-color: #cc704c;
+  z-index: -1;
+  display: grid;
+  place-items: center;
+  place-content: center;
+}
+
+.address {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 6rem;
+  p {
+    height: 0.5rem;
+    font-weight: 200;
+  }
+}
+
+.street-address {
+  margin: 2rem 0;
+}
